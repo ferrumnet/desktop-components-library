@@ -1,0 +1,36 @@
+{
+  "name": "web-components-library",
+  "version": "1.0.0",
+  "description": "React components library for web implementation.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "files": [
+    "src"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testRegex": "/src/.*\\.test\\.js$"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "react-icons": "^3.10.0",
+    "unifyre-react-helper": "git+https://github.com/ferrumnet/unifyre-react-helper.git"
+  }
+}
