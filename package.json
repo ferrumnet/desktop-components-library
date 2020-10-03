@@ -1,10 +1,12 @@
 {
-  "name": "web-components-library",
+  "name": "desktop-components-library",
   "version": "1.0.0",
-  "description": "React components library for web implementation.",
+  "description": "Desktop components library for web implementation.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "build-and-cp": "tsc && cp -r ./dist ../unifyre-app-staking/node_modules/unifyre-components-library/"
   },
   "files": [
     "src"
@@ -27,10 +29,19 @@
   },
   "homepage": "",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "react": "@16.9.0"
   },
   "dependencies": {
+    "@fluentui/react": "^7.143.0",
+    "@types/jest": "^25.2.3",
+    "@types/react": "~16.9.0",
+    "jest": "^26.0.1",
     "react-icons": "^3.10.0",
+    "ts-jest": "^26.0.0",
+    "tslint": "^5.0.0",
+    "tslint-config-airbnb-base": "^0.3.0",
+    "typescript": "^3.6.3",
     "unifyre-react-helper": "git+https://github.com/ferrumnet/unifyre-react-helper.git"
   }
 }
