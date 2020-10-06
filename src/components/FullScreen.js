@@ -1,5 +1,5 @@
-import React, {useState, useEffect, useContext} from 'react';
-import '../css/main.css';
+import React, {useState, useEffect} from 'react';
+// import '../css/main.css';
 
 export function FullScreen({style, children}) {
     const [height, setHeight] = useState(window.innerHeight);

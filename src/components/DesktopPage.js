@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {WebThemeContext} from 'unifyre-react-helper';
+import {ThemeContext as WebThemeContext} from 'unifyre-react-helper';
 
 export function DesktopPage({children,NavBar,Footer}) {
     const theme = useContext(WebThemeContext);
