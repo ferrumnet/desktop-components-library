@@ -1,15 +1,16 @@
 import React, {useContext} from 'react';
-import {ThemeContext as WebThemeContext} from 'unifyre-react-helper';
+import {ThemeContext, Theme} from 'unifyre-react-helper';
+import './DesktopPage.css';
 
 export function DesktopPage({children,NavBar,Footer}) {
-    const theme = useContext(WebThemeContext);
+    const theme = useContext(ThemeContext);
     const styles = themedStyles(theme);
     return (
-    <div style={{...styles.fullScreen, ...styles.smallGap}}>
-        <div style={styles.navbarContainer}>
+    <div className="full-screen-page" style={{...styles.fullScreen}}>
+        <div className="nav-bar-container" >
             {NavBar}
         </div>
-        <div style={{...styles.fullScreen, ...styles.innerContainer}}>
+        <div className="full-screen-page contents-container page-container">
             {children}
         </div>
         <div style={styles.footer}>
@@ -26,25 +27,9 @@ const themedStyles = theme => ({
         bottom: '0',
         width: '100%'
     },
-    navbarContainer:{
-        backgroundColor: 'white',
-        color: 'white',
-        borderBottomWidth: '1px',
-        borderBottomStyle: 'solid',
-        zindex: 1
-    },
-    innerContainer: {
-        minWidth: '50%',
-        margin: '0px auto',
-        marginTop: '3%',
-        position: 'relative',
-        minHeight: window.innerHeight,
-    },
     fullScreen: {
-        display: 'flex',
-        flexDirection: 'column',
         minHeight: window.innerHeight,
-        backgroundColor: theme.backgroundColor,
+        backgroundColor: theme.get(Theme.Colors.bkgShade0)
     },
     smallGap: {
     }

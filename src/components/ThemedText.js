@@ -46,13 +46,7 @@ export class ThemedText {
 const W = {};
 
 export function widthFactor() {
-    if (W.val) {
-        return W.val;
-    }
-    const win = window.innerWidth;
-    const baseSize = 375; // iPhoneX https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
-    W.val = Math.min(win/baseSize, 1);
-    return W.val;
+    return 1;
 }
 
 const themedStyles = theme => ({
@@ -61,26 +55,26 @@ const themedStyles = theme => ({
         color: theme.get(Theme.Colors.textColor),
     },
     h1: {
-        fontSize: theme.get(Theme.Text.h1Size) * widthFactor(),
+        fontSize: theme.get(Theme.Text.h1Size),
     },
     h2: {
-        fontSize: theme.get(Theme.Text.h2Size) * widthFactor(),
+        fontSize: theme.get(Theme.Text.h2Size),
     },
     h3: {
-        fontSize: theme.get(Theme.Text.h3Size) * widthFactor(),
+        fontSize: theme.get(Theme.Text.h3Size),
     },
     h4: {
-        fontSize: theme.get(Theme.Text.h4Size) * widthFactor(),
+        fontSize: theme.get(Theme.Text.h4Size),
     },
     p: {
-        fontSize: theme.get(Theme.Text.h2Size) * 0.7 * widthFactor(),
+        fontSize: theme.get(Theme.Text.pSize),
     },
     small: {
-        fontSize: theme.get(Theme.Text.h3Size) * 0.7 * widthFactor(),
+        fontSize: theme.get(Theme.Text.h3Size),
     },
     mono: {
         fontFamily: 'Courier, monospace',
-        fontSize: theme.get(Theme.Text.h3Size) * widthFactor(),
+        fontSize: theme.get(Theme.Text.h3Size),
     }
 });
 
