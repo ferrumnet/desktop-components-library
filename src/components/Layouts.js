@@ -1,5 +1,5 @@
-import React, {useContext, useState, useEffect} from 'react';
-import {WebThemeContext,WebTheme} from 'unifyre-react-helper';
+import React, {useContext} from 'react';
+import {ThemeContext, Theme} from 'unifyre-react-helper';
 
 /**
  * Single row layout - container
@@ -7,7 +7,7 @@ import {WebThemeContext,WebTheme} from 'unifyre-react-helper';
  * @constructor
  */
 export function Row({withPadding, withPaddingLeftOnly, gapMarginTop, children, noMarginTop, centered}) {
-    const theme = useContext(WebThemeContext);
+    const theme = useContext(ThemeContext);
     const styles = themedStyles(theme);
     let withPaddingStyle, withGapMarginTop, noMarginTopStyle, withCentered;
 
