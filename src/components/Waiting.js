@@ -1,10 +1,8 @@
-
 import React, {useContext} from 'react';
-import {ThemeContext, Theme} from 'unifyre-react-helper';
 import { Hourglass } from 'react-spinners-css';
-import { FullScreen } from './FullScreen';
 import { ThemedText } from './ThemedText';
 import { Gap, Row } from './Layouts';
+import {ThemeContext, Theme} from 'unifyre-react-helper';
 
 export function Waiting({show, message}) {
     const theme = useContext(ThemeContext);

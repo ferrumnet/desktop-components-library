@@ -3794,7 +3794,7 @@ typescript@^3.6.3:
 
 "unifyre-react-helper@git+https://github.com/ferrumnet/unifyre-react-helper.git":
   version "1.0.0"
-  resolved "git+https://github.com/ferrumnet/unifyre-react-helper.git#d178d9536f709705c13310cb1c4d2782cdef68cd"
+  resolved "git+https://github.com/ferrumnet/unifyre-react-helper.git#f0599ea636dcbaaafc6e00b6dcd39d15ab0bd005"
   dependencies:
     "@fluent/bundle" "^0.15.1"
 
