@@ -51,7 +51,6 @@ export function widthFactor() {
 
 const themedStyles = theme => ({
     commonText: {
-        fontFamily: theme.get(Theme.Font.main),
         color: theme.get(Theme.Colors.textColor),
     },
     h1: {
